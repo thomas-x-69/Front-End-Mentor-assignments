@@ -1,0 +1,116 @@
+:root {
+  --font-siz: 11px;
+  --texts: center;
+  --main-color: hsl(228, 45%, 44%);
+}
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+body {
+  background: #d6e1ff;
+}
+.container {
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  display: block;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  height: 550px;
+  overflow: hidden;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container:hover {
+  box-shadow: 0px 11px 34px 0px hsl(224deg 100% 80%);
+}
+.container img {
+  width: 100%;
+}
+.container h1 {
+  font-size: 20px;
+  margin-top: 30px;
+  font-weight: 900;
+  color: #282f5a;
+}
+.container p {
+  text-align: center;
+  font-size: 14px;
+  color: #8e92a0;
+  margin: 0px 30px 9px 30px;
+}
+.container button {
+  cursor: pointer;
+  padding: 14px 25%;
+  border: none;
+  margin: 10px 0px 10px 0;
+  color: #fff;
+  background: #382ae1;
+  border-radius: 10px;
+  font-weight: 600;
+  box-shadow: 0px 11px 34px 0px hsl(224deg 100% 80%);
+}
+.container button:hover {
+  background: #382ae1db;
+}
+.plan {
+  display: flex;
+  margin: 10px 20px 30px 20px;
+  padding: 0px 15px;
+  justify-content: center;
+  align-items: center;
+  background: aliceblue;
+  border-radius: 10px;
+}
+.plan svg {
+  margin: 15px 0 15px 0px;
+}
+.plan a {
+  color: #554eb3;
+  font-weight: 700;
+  font-size: 14px;
+}
+.plan a:hover {
+  text-decoration: none;
+}
+.plan h4 {
+  margin: 0 0 16px 7px;
+  font-weight: 900;
+  font-size: small;
+  color: rgb(40, 47, 90);
+}
+.plan span {
+  margin: 5px 95px -18px -86px;
+  font-size: 14px;
+  color: #7f889d;
+}
+.container > span {
+  color: #7f889d;
+  font-weight: 900;
+  margin-top: 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.container > span:hover {
+  color: black;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  background: #382ae1;
+  width: -webkit-fill-available;
+  left: 0;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
