@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap');
+
+$blue: hsl(192, 37%, 48%);
+$blueoverlay: hsla(192, 37%, 48%, 0.90);
+$purple: hsl(268, 34%, 53%);
+$darkblue: hsl(240, 21%, 20%);
+$gray: hsl(240, 10%, 57%);
+$linecolor: hsla(240, 10%, 57%, 0.25);
+$lightblue: hsl(192, 80%, 77%);
+$lightpurple: #d9b8ff;
+$bluehover: hsl(192, 54%, 64%);
+$purplehover:hsl(268, 55%, 71%);
+$white: hsl(0, 0, 98%);
+
+// Font
+$font: 'Red Hat Display',
+sans-serif;
+
+//H1 
+$h1-size: 4rem;
+$h1-lineheight: 4rem;
+
+// H2
+$h2-size: 2.5rem;
+$h2-lineheight: 2.75rem;
+
+// H3
+$h3-color: $blue;
+$h3-size: 1rem;
+$h3-lineheight: 1.625rem;
+$h3-spacing: 0.25rem;
+
+// P
+$p-size: 1.125rem;
+$p-color: $gray;
+$p-lineheight: 1.625rem;
+$p-weight: 500;
+
+
+// SHARED VALUES 
+$heading-color: $darkblue;
+$h-weight: 900;

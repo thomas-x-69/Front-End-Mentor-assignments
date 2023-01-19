@@ -1,0 +1,461 @@
+@import 'colors-and-font';
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font;
+  font-weight: $p-weight;
+  line-height: $p-lineheight;
+  color: $p-color;
+  background: $white;
+}
+
+// Header Styles
+header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  overflow-x: hidden;
+  align-items: center;
+  justify-content: center;
+
+  .logo {
+    margin: 3rem auto 6.75rem auto;
+  }
+
+  .hero-mobile {
+    width: 110%;
+  }
+
+  .header-container {
+    display: none;
+  }
+
+  .text-container {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  h1 {
+    color: $heading-color;
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+    margin-bottom: 1.5rem;
+    padding: 0 3.71rem;
+  }
+
+  p {
+    line-height: $p-lineheight;
+    font-weight: $p-weight;
+    font-size: 1rem;
+    padding: 0 1.5rem;
+  }
+
+  .download,
+  .about {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .download {
+    margin-bottom: 1rem;
+  }
+
+}
+
+.download,
+.about {
+  font-family: $font;
+  font-size: $p-size;
+  font-weight: $h-weight;
+  line-height: $p-lineheight;
+  color: $white;
+  transition: 0.2s ease-in-out;
+  padding: 1rem 0;
+  border-radius: 1.812rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.download {
+  background-color: $blue;
+  width: 12.06rem;
+}
+
+.download .version {
+  color: $lightblue;
+}
+
+.download:hover {
+  background: $bluehover;
+}
+
+.about {
+  background: $purple;
+  width: 8.687rem;
+  margin-bottom: 4rem;
+}
+
+.about:hover,
+footer .download:hover {
+  background: $purplehover;
+}
+
+// Main Styles
+.line {
+  height: 5.25em;
+  width: 0.0625rem;
+  margin: 0 auto;
+  background: $linecolor;
+}
+
+.no1,
+.no2 {
+  text-align: center;
+  font-weight: $h-weight;
+  border: 0.0625rem solid $linecolor;
+  display: inline-block;
+  padding: 1rem 1.2rem;
+  border-radius: 50%;
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+.no1 {
+  margin-bottom: 4rem;
+}
+
+main {
+  text-align: center;
+
+  .image-grid {
+    display: flex wrap;
+    margin-bottom: 3.687rem;
+
+    img {
+      border-radius: 0.5rem;
+      width: 40%;
+      margin-bottom: 0.5rem;
+
+      &:nth-child(odd) {
+        margin-right: 0.5rem;
+      }
+
+      &:nth-child(even) {
+        margin-left: 0.5rem;
+      }
+
+    }
+  }
+
+  h3 {
+    color: $h3-color;
+    font-size: $h3-size;
+    letter-spacing: $h3-spacing;
+    font-weight: $h-weight;
+    text-transform: uppercase;
+    margin-bottom: 1.687rem;
+  }
+
+  .text-container {
+    padding: 0 1.5rem;
+    padding-bottom: 11rem;
+  }
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 2.25rem;
+  color: $heading-color;
+  margin-bottom: 2rem;
+}
+
+// Footer Styles
+.no2 {
+  background: $white;
+  color: $gray;
+  padding: 1rem 1rem;
+  transform: translateY(-7.5rem);
+}
+
+footer {
+  position: relative;
+  color: $white;
+  text-align: center;
+  background-image: url('../assets/image-footer1.jpg');
+  background-size: cover;
+  padding: 0 1.5rem;
+  font-size: $p-size;
+  z-index: 1;
+
+  .line {
+    transform: translateY(-7.5rem);
+  }
+
+  h2 {
+    margin-top: -3.687rem;
+    color: $white;
+  }
+
+  p {
+    margin-bottom: 2rem;
+  }
+
+  .download {
+    background: $purple;
+    margin-bottom: 4.5rem;
+  }
+
+  .download .version {
+    color: $lightpurple;
+  }
+
+  .overlay {
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+
+    top: 0;
+    left: 0;
+    background: $blueoverlay;
+  }
+}
+
+@media (min-width: 37.5rem) {
+
+  // Header Styles
+  h2 {
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+  }
+
+
+  header {
+    .hero-mobile {
+      width: 107%;
+    }
+
+    .text-container {
+      margin-top: 4.5rem auto 0 auto;
+      width: 28.562rem;
+      margin-bottom: 2rem;
+
+    }
+
+    h1 {
+      font-size: 3rem;
+      line-height: 3rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .flex-btn {
+      display: flex;
+      width: 21.75rem;
+      align-content: center;
+      justify-content: space-between;
+      margin: 0 13.187rem 5rem 13.187rem;
+    }
+
+    .download {
+      align-self: flex-start;
+      margin: 0;
+    }
+
+    .about {
+      align-self: flex-end;
+      margin: 0;
+    }
+  }
+
+  // Main Styles
+  main {
+
+    .image-grid {
+      width: 100%;
+
+      img {
+        width: 22%;
+
+        &:nth-child(odd) {
+          margin-right: 0.687rem;
+        }
+
+        &:nth-child(even) {
+          margin-left: 0rem;
+          margin-right: 0.687rem;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+
+    .text-container {
+      padding-left: 6.125rem;
+      padding-right: 6.125rem;
+      padding-bottom: 11rem;
+
+    }
+
+    h2 {
+      width: 27.812rem;
+      margin: 0 auto 2rem auto;
+    }
+  }
+
+  // Footer Styles 
+  footer {
+    background-image: url('../assets/image-footer2.jpg');
+    background-position: center;
+
+    h2 {
+      padding: 0 9.75rem;
+    }
+
+    p {
+      padding: 0 4rem;
+    }
+
+  }
+
+}
+
+
+
+@media (min-width: 50rem) {
+
+  // Header Styles 
+  header {
+    display: block;
+
+    .header-container {
+      display: block;
+      position: relative;
+      width: 100%;
+
+      img {
+        width: 30%;
+      }
+
+      .hero-left {
+        position: absolute;
+        left: -2.3%;
+        top: 0;
+      }
+
+      .hero-right {
+        position: absolute;
+        right: -2.3%;
+        top: 0;
+      }
+    }
+
+    .hero-mobile {
+      display: none;
+    }
+
+    .text-container {
+      margin: 0 auto;
+      padding: 0;
+      width: 32%;
+    }
+
+    h1 {
+      font-size: $h1-size;
+      line-height: $h1-lineheight;
+      padding: 0;
+    }
+
+    p {
+      padding: 0;
+      margin-bottom: 2rem;
+    }
+
+    .flex-btn {
+      display: flex;
+      margin: 0 auto;
+      align-content: center;
+      margin: 0 auto 5rem auto;
+    }
+
+  }
+
+  main {
+    .image-grid {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h2 {
+      width: auto;
+      padding: 0 2rem;
+    }
+
+    .text-container {
+      padding-left: 0rem;
+      padding-right: 0rem;
+      margin: 0 auto;
+      width: 31.75rem;
+    }
+  }
+
+  // Footer Styles 
+  footer {
+    background-image: url('..assets/image-footer.jpg');
+    padding-bottom: 6.5rem;
+
+    .flex-container {
+      text-align: left;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin: 0 10%;
+      width: 90%;
+
+
+      h2 {
+        margin: 0;
+        padding: 0;
+
+      }
+
+      p {
+        padding: 0;
+        max-width: 21.5rem;
+        margin: 0;
+      }
+
+      .download {
+        height: 3.625rem;
+        align-self: center;
+        margin: 0;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 57.5rem) {
+  header {
+    h1 {
+      font-size: 2.5rem;
+      line-height: 2.75rem;
+    }
+  }
+}
+
+@media (max-width: 75rem) {
+  footer {
+    p {
+      margin-right: 1rem;
+      margin-left: 1rem;
+    }
+  }
+}
