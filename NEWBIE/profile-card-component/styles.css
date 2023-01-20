@@ -1,0 +1,152 @@
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: hsl(185, 75%, 39%);
+    /* background-image: url('images/bg-pattern-top.svg'), url('images/bg-pattern-bottom.svg'); */
+    /* background-repeat:no-repeat, no-repeat; */
+    /* background-position: -55% 170%, 155% -80%; */
+    /* background-position:-270px -590px, 700px 300px; */
+    text-align: center;
+    overflow: hidden;
+}
+
+body::before,
+body::after {
+    position: absolute;
+    content: '';
+    width: 100vw;
+    height: 100vh;
+    background-size: auto;
+    transform: translate(-50%, -50%);
+}
+
+body::before {
+    z-index: -1;
+    background: url("images/bg-pattern-top.svg") no-repeat bottom right;
+    top: 0;
+    left: 0;
+}
+
+body::after {
+    z-index: -1;
+    background: url("images/bg-pattern-bottom.svg") no-repeat top left;
+    top: 100%;
+    left: 100%;
+}
+
+
+#top-pattern {
+    position: absolute;
+    z-index: -1;
+    /* width: 100vw; */
+    /* height: 100vh; */
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    size: auto;
+}
+
+#bottom-pattern {
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    top: 100%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    size: auto;
+}
+
+
+hr {
+    border: 0.1px solid hsl(0, 0%, 90%);
+    border-left: none;
+    border-bottom: none;
+    border-right: none;
+    margin: 0;
+}
+
+p {
+    color: hsl(227, 10%, 46%);
+    font-size: 12px;
+}
+
+span {
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+}
+
+.profile-card {
+    height: 360px;
+    width: 350px;
+    /* border: 1px solid black; */
+    border-radius: 20px;
+    margin: auto;
+    margin: 120px auto;
+
+}
+
+/* Background Patterns */
+.pattern-top {
+    background-image: url('images/bg-pattern-top.svg');
+}
+
+.pattern-bottom {
+    background-image: url('images/bg-pattern-bottom.svg');
+}
+
+/* Bg section */
+#bg-section {
+    height: 35%;
+    background-image: url(images/bg-pattern-card.svg);
+    border-radius: 20px 20px 0 0;
+}
+
+/* Bio section */
+#bio-section {
+    height: 40%;
+    background-color: #FFF;
+    padding: 20% 0 3%;
+    position: relative;
+}
+
+#bio-section p {
+    margin-top: 5px;
+
+}
+
+.profile-pic {
+    background-color: #FFF;
+    border-radius: 100%;
+    border: 5px solid #FFF;
+    position: absolute;
+    bottom: 60%;
+    left: 35%;
+}
+
+.profile-name {
+    color: hsl(229, 23%, 23%);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* Stats section */
+#stats-section {
+    background-color: #FFF;
+    height: 25%;
+    border-radius: 0 0 20px 20px;
+    padding: 7% 7%;
+}
+
+
+
+
+/* Footer */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
