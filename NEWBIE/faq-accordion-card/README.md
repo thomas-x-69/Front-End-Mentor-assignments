@@ -1,19 +1,16 @@
 # Frontend Mentor - FAQ accordion card solution
 
-This is a solution to the [FAQ accordion card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [FAQ accordion card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Table of contents
+## Layout
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [Thoughts](#thoughts)
-- [Author](#author)
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
 
 ## Overview
+
 
 ### The challenge
 
@@ -25,12 +22,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshots/faq-accordion-card-mobile.png)
-![](./screenshots/faq-accordion-card-desktop.png)
+![](./solution-w-1440.png)
+![](./solution-w-375.png)
 
 ### Links
 
-[Solution URL](https://faq-accordion-card-fem.netlify.app/)
+- Live Site URL: [Live site URL here](https://giuse92.github.io/faq-accordion-card)
 
 ## My process
 
@@ -38,17 +35,13 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexbox
-- CSS Grid
-- Javascript
-- Mobile-first workflow
+- Positioning and Flexbox
+- JS
 
-### Thoughts
+### Continued development
 
-For each question this solution uses an article element with a button and some pragraphs inside. For now, I leave it as it is, but I found some HTML elements that might be more suitable for creating a [disclosure widget](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details). Apart from IE, most browsers seem to support the details element and it looks fine from the [accessibility point of view](https://www.scottohara.me/blog/2018/09/03/details-and-summary.html).
-
-I may update this solution in the future, until then, this element is an interesting thing to note, at least.
+Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
 
 ## Author
 
-- Frontend Mentor - [@FluffyKas](https://www.frontendmentor.io/profile/FluffyKas)
+- Frontend Mentor - [@giuse92](https://www.frontendmentor.io/profile/giuse92)
