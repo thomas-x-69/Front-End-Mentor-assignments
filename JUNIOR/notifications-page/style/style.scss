@@ -111,6 +111,11 @@ section {
         color: var(--very-dark-blue);
       }
       .text-content {
+        &.unAfter {
+          &::after {
+            content: none;
+          }
+        }
         &::after {
           content: "";
           display: var(--toggle-display);
