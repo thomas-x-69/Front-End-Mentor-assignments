@@ -1,54 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <!-- displays site properly based on user's device -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  <title>Advice generator</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Advice generator</title>
+  </head>
+  <body>
+    <!-- Main -->
+    <main>
+      <!-- Advice Container -->
+      <div class="advice-container">
+        <!-- Advice ID goes here -->
+        <p class="advice-id">Advice #<span id="advice-number"></span></p>
 
-  <!-- Main -->
-  <main>
+        <!-- Advice text goes here -->
+        <p class="advice-text">Loading..</p>
+      </div>
 
-    <!-- Advice Container -->
-    <div class="advice-container">
+      <!-- Divider -->
+      <img src="images/pattern-divider-desktop.svg" alt="" class="divider" />
 
-      <!-- Advice ID goes here -->
-      <p class="advice-id">
-        Advice #<span id="advice-number"></span>
-      </p>
+      <!-- Dice Button -->
+      <button id="dice">
+        <img src="images/icon-dice.svg" alt="Dice to generate new advice" />
+      </button>
+    </main>
 
-      <!-- Advice text goes here -->
-      <p class="advice-text">
-        Loading..
-      </p>
-    </div>
+    <!-- Attribution -->
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+        Frontend Mentor </a
+      >. Coded by <a href="">Thomas Ashraf</a>.
+    </footer>
 
-    <!-- Divider -->
-    <img src="images/pattern-divider-desktop.svg" alt="" class="divider">
-    
-    <!-- Dice Button -->
-    <button id="dice"><img src="images/icon-dice.svg" alt="Dice to generate new advice"></button>
-
-  </main>
-
-  <!-- Attribution -->
-  <footer class="attribution">
-    Challenge by 
-    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
-      Frontend Mentor
-    </a>. 
-    Coded by 
-    <a href="https://github.com/Krrish105">
-      Karishma Garg
-    </a>.
-  </footer>
-
-  <!-- Script -->
-  <script src="script.js"></script>
-
-</body>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
 </html>
