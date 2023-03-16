@@ -102,3 +102,65 @@ let data = [
     },
   },
 ];
+let period = document.querySelectorAll(".end");
+let daily = document.getElementById("daily");
+let weekly = document.getElementById("weekly");
+let monthly = document.getElementById("monthly");
+
+daily.addEventListener("click", dailyFunc);
+monthly.addEventListener("click", monthlyFunc);
+weekly.addEventListener("click", weeklyFunc);
+window.onload = weeklyFunc();
+function dailyFunc() {
+  daily.classList.add("active");
+  monthly.classList.remove("active");
+  weekly.classList.remove("active");
+  period[0].innerHTML = ` <p>${data[0].timeframes.daily.current + "hrs"} </p> 
+  <p>${"Yesterday - " + data[0].timeframes.daily.previous + "hrs"} </p> `;
+  period[1].innerHTML = ` <p>${data[1].timeframes.daily.current + "hr"} </p> 
+  <p>${"Yesterday - " + data[1].timeframes.daily.previous + "hrs"} </p> `;
+  period[2].innerHTML = ` <p>${data[2].timeframes.daily.current + "hr"} </p> 
+  <p>${"Yesterday - " + data[2].timeframes.daily.previous + "hr"} </p> `;
+  period[3].innerHTML = ` <p>${data[3].timeframes.daily.current + "hr"} </p> 
+  <p>${"Yesterday - " + data[3].timeframes.daily.previous + "hr"} </p> `;
+  period[4].innerHTML = ` <p>${data[4].timeframes.daily.current + "hr"} </p> 
+  <p>${"Yesterday - " + data[4].timeframes.daily.previous + "hrs"} </p> `;
+  period[5].innerHTML = ` <p>${data[5].timeframes.daily.current + "hr"} </p> 
+  <p>${"Yesterday - " + data[5].timeframes.daily.previous + "hr"} </p> `;
+}
+
+function weeklyFunc() {
+  daily.classList.remove("active");
+  monthly.classList.remove("active");
+  weekly.classList.add("active");
+  period[0].innerHTML = ` <p>${data[0].timeframes.weekly.current + "hrs"} </p> 
+  <p>${"Last Week - " + data[0].timeframes.weekly.previous + "hrs"} </p> `;
+  period[1].innerHTML = ` <p>${data[1].timeframes.weekly.current + "hrs"} </p> 
+  <p>${"Last Week - " + data[1].timeframes.weekly.previous + "hrs"} </p> `;
+  period[2].innerHTML = ` <p>${data[2].timeframes.weekly.current + "hrs"} </p> 
+  <p>${"Last Week - " + data[2].timeframes.weekly.previous + "hrs"} </p> `;
+  period[3].innerHTML = ` <p>${data[3].timeframes.weekly.current + "hrs"} </p> 
+  <p>${"Last Week - " + data[3].timeframes.weekly.previous + "hrs"} </p> `;
+  period[4].innerHTML = ` <p>${data[4].timeframes.weekly.current + "hrs"} </p> 
+  <p>${"Last Week - " + data[4].timeframes.weekly.previous + "hrs"} </p> `;
+  period[5].innerHTML = ` <p>${data[5].timeframes.monthly.current + "hrs"} </p> 
+  <p>${"Last Week - " + data[5].timeframes.monthly.previous + "hrs"} </p> `;
+}
+
+function monthlyFunc() {
+  daily.classList.remove("active");
+  monthly.classList.add("active");
+  weekly.classList.remove("active");
+  period[0].innerHTML = ` <p>${data[0].timeframes.monthly.current + "hrs"} </p> 
+  <p>${"Last month - " + data[0].timeframes.monthly.previous + "hrs"} </p> `;
+  period[1].innerHTML = ` <p>${data[1].timeframes.monthly.current + "hrs"} </p> 
+  <p>${"Last month - " + data[1].timeframes.monthly.previous + "hrs"} </p> `;
+  period[2].innerHTML = ` <p>${data[2].timeframes.monthly.current + "hrs"} </p> 
+  <p>${"Last month - " + data[2].timeframes.monthly.previous + "hrs"} </p> `;
+  period[3].innerHTML = ` <p>${data[3].timeframes.monthly.current + "hrs"} </p> 
+  <p>${"Last month - " + data[3].timeframes.monthly.previous + "hrs"} </p> `;
+  period[4].innerHTML = ` <p>${data[4].timeframes.monthly.current + "hrs"} </p> 
+  <p>${"Last month - " + data[4].timeframes.monthly.previous + "hrs"} </p> `;
+  period[5].innerHTML = ` <p>${data[5].timeframes.monthly.current + "hrs"} </p> 
+  <p>${"Last month - " + data[5].timeframes.monthly.previous + "hrs"} </p> `;
+}
