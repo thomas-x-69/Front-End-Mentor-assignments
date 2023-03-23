@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Frontend Mentor |Coding Bootcamp Testimonials Slider</title>
+  </head>
+  <body>
+    <!-- Wrapper div for bottom curve-->
+    <div class="wrapper curve">
+      <!-- Container div for max-width of content-->
+      <div class="container testinomial-one">
+        <!-- Main container -->
+        <div class="flex">
+          <!-- Testinomial info container -->
+          <div class="testinomial-info-cont">
+            <p class="testinomial-info">
+              <img src="./images/pattern-quotes.svg" alt="" class="quote" />
+              <!-- alt attribute is empty since img only for decoration -->
+              “ I’ve been interested in coding for a while but never taken the
+              jump, until now. I couldn’t recommend this course enough. I’m now
+              in the job of my dreams and so excited about the future. ”
+            </p>
+            <div class="testinomial-summary">
+              <p class="bold">Tanya Sinclair</p>
+              <p class="light">UX Engineer</p>
+            </div>
+          </div>
+          <!-- Image container -->
+          <div class="testinomial-img-cont">
+            <img
+              src="./images/image-tanya.jpg"
+              alt="UX Engineer"
+              class="testinomial-img"
+            />
+            <img
+              src="./images/pattern-bg.svg"
+              alt=""
+              class="pattern"
+            /><!-- alt attribute is empty since img only for decoration -->
+            <button
+              class="switch"
+              id="content-switcher-1"
+              aria-label="switch-testinomial"
+            >
+              <img src="./images/icon-prev.svg" alt="" />
+              <img src="./images/icon-next.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container testinomial-second display-none">
+        <!-- Main container -->
+        <div class="flex">
+          <!-- Testinomial info container -->
+          <div class="testinomial-info-cont">
+            <!-- alt attribute is empty since img only for decoration -->
+            <p class="testinomial-info">
+              <img src="./images/pattern-quotes.svg" alt="" class="quote" />
+              “If you want to lay the best foundation possible I’d recommend
+              taking this course. The depth the instructors go into is
+              incredible. I now feel so confident about starting up as a
+              professional developer.”
+            </p>
+            <div class="testinomial-summary">
+              <p class="bold">John Tarkpor</p>
+              <p class="light">Junior Front-end Developer</p>
+            </div>
+          </div>
+          <!-- Image container -->
+          <div class="testinomial-img-cont">
+            <img
+              src="./images/image-john.jpg"
+              alt="UX Engineer"
+              class="testinomial-img"
+            />
+            <img
+              src="./images/pattern-bg.svg"
+              alt=""
+              class="pattern"
+            /><!-- alt attribute is empty since img only for decoration -->
+            <button
+              class="switch"
+              id="content-switcher-2"
+              aria-label="switch-testinomial"
+            >
+              <img src="./images/icon-prev.svg" alt="" />
+              <img src="./images/icon-next.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="">Thomas Ashraf</a>.
+    </div>
+
+    <script src="./script/index.js"></script>
+  </body>
+</html>
